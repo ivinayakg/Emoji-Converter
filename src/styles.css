@@ -1,7 +1,17 @@
+:root {
+  --primary: #ef4444;
+  --secondary: #0a0a0a;
+}
+
+body {
+  margin: 0rem;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
-  margin: auto;
+  margin: 2rem auto;
+  padding: 3rem;
 }
 
 #list {
@@ -15,4 +25,39 @@
   display: inline-block;
   margin: 0.5rem;
   cursor: pointer;
+}
+
+header {
+  background-color: var(--primary);
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+
+.App textarea {
+  padding: 1rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  background-color: var(--primary);
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.social-links {
+  list-style: none;
+  margin: 1rem auto;
+}
+
+.social-links a {
+  display: inline;
+  color: var(--secondary);
+  font-size: 2.5rem;
+  margin: auto 1rem;
+}
+
+.footer small {
+  font-size: 1.2rem;
 }
