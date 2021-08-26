@@ -7,7 +7,10 @@ export default function App() {
 
   const textChangeHandler = (e) => {
     var value = e.target.value;
-    setMeaning(emoji[value]);
+    var result = emoji_face.includes(value)
+      ? emoji[value]
+      : "Sorry That's not in our library yet!";
+    setMeaning(result);
     setTimeout(() => {
       e.target.value = "";
     }, 3000);
